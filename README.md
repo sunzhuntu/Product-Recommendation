@@ -11,6 +11,6 @@ This project implements four traditional recommendation methods, including most-
 
 ## How to Run the Code
 
-* Under the root directory of your project, using "npm start" to start the browser
+* Under the root directory of the project, using "npm start" to start the browser
 
 * Under the root directory of the project, using "npm run dev" to start the backend server
