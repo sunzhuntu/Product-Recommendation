@@ -14,3 +14,5 @@ This project implements four traditional recommendation methods, including most-
 * Under the root directory of the project, using "npm start" to start the browser
 
 * Under the root directory of the project, using "npm run dev" to start the backend server
+
+**Note: there is also another change on the server side ("server/server.js") when handling the adding products post request. Instead of saving the product id into the user table, we save the product title into the user table. Therefore the original code "user.products = user.products.concat(savedProduct._id)" has been replaced bythe code "user.products = user.products.concat(savedProduct.title)"**
