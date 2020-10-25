@@ -1,4 +1,5 @@
-require('dotenv').config()
+//loads environment variables from a .env file
+require('dotenv').config() 
 const jwt = require('jsonwebtoken')
 
 const express = require('express')
@@ -103,8 +104,6 @@ app.put('/api/products/:id', (request, response, next) => {
     })
     .catch(error => next(error))
 })
-
-
 
 const unknownEndpoint = (request, response) => {
   response.status(404).send({ error: 'unknown endpoint' })
